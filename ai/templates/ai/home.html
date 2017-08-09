@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>
+	PREDICT_X
+</title>
+</head>
+<body>
+{% block content %}
+	<form method = "POST" class = "post-form">{% csrf_token %}
+		{{info_form.as_p}}
+	<button type="submit">Submit</button>
+	</form>
+
+<h1>{{ val }}</h2>
+{% endblock %}
+</body>
+</html>
